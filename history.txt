@@ -1,0 +1,19 @@
+    1  history | grep clone
+    2  cd ..
+    3  dir
+    4  git clone git@github.com:VNMad/Git-Homework-12.git
+    5  ls -sal
+    6  cd Git-Homework-12
+    7  git checkout -b feature
+    8  echo '#Git Homework 12' >> README.md
+    9  vi README.md
+   10  vi .gitignore
+   11  git add README.md .gitignore
+   12  git commit -m "Add changes to README.md and .gitignore"
+   13  git push -u origin feature
+   14  git commit --amend -m "Add changes to README.md and .gitignore with ammend"
+   15  git push -f
+   16  git checkout main
+   17  git merge feature
+   18  git push
+   19  history > history.txt
